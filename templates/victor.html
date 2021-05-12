@@ -56,10 +56,12 @@
                 <div class="col-1">
 
                     <!--Logo-->
-                    <div id="logo" href="home">
+                    <div id="logo">
 
                         <!--Logo that is shown on the banner-->
-                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                        </a>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
