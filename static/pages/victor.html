@@ -12,19 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" title="Favicon"/>
+    <link rel="shortcut icon" href="{{url_for('images', filename='favicon.ico')}}" title="Favicon"/>
 
     <!-- Main CSS Files -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('css', filename='style.css')}}">
 
     <!-- Namari Color CSS -->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/namari-color.css')}}">
+    <link rel="stylesheet" href="{{url_for('css', filename='namari-color.css')}}">
 
     <!--Icon Fonts - Font Awesome Icons-->
-    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('css', filename='font-awesome.min.css')}}">
 
     <!-- Animate CSS-->
-    <link href="{{url_for('static', filename='css/animate.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{url_for('css', filename='animate.css')}}" rel="stylesheet" type="text/css">
 
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -59,11 +59,11 @@
                     <div id="logo">
 
                         <!--Logo that is shown on the banner-->
-                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                        <img src="{{url_for('images', filename='logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="navigation-logo" alt="Landing Page"/>
+                        <img src="{{url_for('images', filename='logo-1.png')}}" id="navigation-logo" alt="Landing Page"/>
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -157,7 +157,7 @@
                 <!--End Content Right Side-->
 
                 <div class="col-3">
-                    <img src="{{url_for('static', filename='images/robot.jpg')}}" alt="Robot"/>
+                    <img src="{{url_for('images', filename='robot.jpg')}}" alt="Robot"/>
                 </div>
 
             </div>
@@ -192,19 +192,18 @@
 </div>
 
 <!-- Include JavaScript resources -->
-<script src="{{url_for('static', filename='js/jquery.1.8.3.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/featherlight.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/featherlight.gallery.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/jquery.enllax.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/jquery.scrollUp.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/jquery.stickyNavbar.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/images-loaded.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/lightbox.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/site.js')}}"></script>
-
+<script src="{{url_for('js', filename='jquery.1.8.3.min.js')}}"></script>
+<script src="{{url_for('js', filename='wow.min.js')}}"></script>
+<script src="{{url_for('js', filename='featherlight.min.js')}}"></script>
+<script src="{{url_for('js', filename='featherlight.gallery.min.js')}}"></script>
+<script src="{{url_for('js', filename='jquery.enllax.min.js')}}"></script>
+<script src="{{url_for('js', filename='jquery.scrollUp.min.js')}}"></script>
+<script src="{{url_for('js', filename='jquery.easing.min.js')}}"></script>
+<script src="{{url_for('js', filename='jquery.stickyNavbar.min.js')}}"></script>
+<script src="{{url_for('js', filename='jquery.waypoints.min.js')}}"></script>
+<script src="{{url_for('js', filename='images-loaded.min.js')}}"></script>
+<script src="{{url_for('js', filename='lightbox.min.js')}}"></script>
+<script src="{{url_for('js', filename='site.js')}}"></script>
 
 </body>
 </html>
