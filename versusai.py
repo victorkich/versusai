@@ -7,5 +7,9 @@ def main():
     return render_template('index.html')
 
 @app.route("/victor")
-def test_link():
+def victor():
     return render_template('victor.html')
+
+@app.route("/home")
+def home():
+    return render_template('index.html')
