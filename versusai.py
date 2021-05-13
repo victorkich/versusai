@@ -46,6 +46,6 @@ def home():
 def icar2019():
     return render_template('icar2019.html')
 
-@app.route("/icra2020")
-def icra2020():
-    return render_template('icra2020.html')
+@app.route("/icra2021")
+def icra2021():
+    return render_template('icra2021.html')
