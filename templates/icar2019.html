@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>VersusAI</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/namari-color.css')}}">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+
+    <!-- Animate CSS-->
+    <link href="{{url_for('static', filename='css/animate.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                        </a>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="navigation-logo" alt="Landing Page"/>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Github" href="https://github.com/versusai">
+                                    <i class="fa fa-github fa-1x"></i><span>Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCmswW8XQuyQ8WMqqnietwnw">
+                                    <i class="fa fa-youtube-play fa-1x"></i><span>Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Media</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Introduction-->
+        <section id="about" class="introduction scrollto">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>ICAR 2019</h3>
+                        <h2 class="section-title">
+                            19th International Conference on Advanced Robotics (ICAR)</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                    <p>
+                        <h4>Abstract</h4>
+
+                        This paper presents a study of a deep reinforcement learning 
+                        technique that uses a Deep Deterministic Policy Gradient network 
+                        for application in navigation of mobile robots. In order for the 
+                        robot to arrive to a target on a map, the network has 10 laser 
+                        range findings, the previous linear and angular velocity, and 
+                        relative position and angle of the mobile robot to the target 
+                        as inputs. As outputs, the network has the linear and angular velocity. 
+                        From the results analysis, it is possible to conclude that the deep 
+                        reinforcement learning's algorithms, with continuous actions, are 
+                        effective for decision-make of a robotic vehicle. However, it is 
+                        necessary to create a good reward system for the intelligent agent 
+                        to accomplish your objectives. This research uses different virtual 
+                        simulation environments provided by ROBOTIS in the robot simulation 
+                        software Gazebo in order to test the performance of the algorithm. 
+                        A supplementary video can be accessed at the following link: 
+                        https://youtu.be/NhGxEC3g7sU. That shows the performance of the 
+                        proposed system.
+
+                    </p>
+
+                </div>
+                <!--End Content Right Side-->
+
+            </div>
+        </section>
+        <!--End of Introduction-->
+
+        <!--Content Section-->
+        <div id="services" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <img src="{{url_for('static', filename='images/user-images/victor.jpeg')}}" alt="User"/>
+
+                    <div class="section-heading">
+                        <h3>Media</h3>
+                        <h2 class="section-title">
+                            VIDEO</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                    
+                    <iframe width="420" height="315" src="https://www.youtube.com/watch?v=ALekstflrAE"></iframe>
+
+                </div>
+                <!--End Content Right Side-->
+
+            </div>
+
+    </main>
+    <!--End Main Content Area-->
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">VersusAI Research Group</p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Github" href="https://github.com/versusai">
+                        <i class="fa fa-github fa-1x"></i><span>Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCmswW8XQuyQ8WMqqnietwnw">
+                        <i class="fa fa-youtube-play fa-1x"></i><span>Youtube</span>
+                    </a>
+                </li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="{{url_for('static', filename='js/jquery.1.8.3.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/featherlight.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/featherlight.gallery.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.enllax.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.scrollUp.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.stickyNavbar.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/images-loaded.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/lightbox.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/site.js')}}"></script>
+
+
+</body>
+</html>

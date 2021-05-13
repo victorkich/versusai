@@ -41,3 +41,7 @@ def marcelo():
 @app.route("/home")
 def home():
     return render_template('index.html')
+
+@app.route("/icar2019")
+def icar2019():
+    return render_template('icar2019.html')
