@@ -49,3 +49,11 @@ def icar2019():
 @app.route("/icra2021")
 def icra2021():
     return render_template('icra2021.html')
+
+@app.route("/jifs2020")
+def icar2019():
+    return render_template('jifs2020.html')
+
+@app.route("/jint2020")
+def icar2019():
+    return render_template('jint2020.html')
