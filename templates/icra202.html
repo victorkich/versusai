@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <!--Page Title-->
+    <title>VersusAI</title>
+
+    <!--Meta Keywords and Description-->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/logo-images/Símbolo/VersusAI . Símbolo . L4 (Color).png')}}" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+
+    <!-- Namari Color CSS -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/namari-color.css')}}">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}">
+
+    <!-- Animate CSS-->
+    <link href="{{url_for('static', filename='css/animate.css')}}" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+</div>
+
+<div id="wrapper">
+
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+
+                        <!--Logo that is shown on the banner-->
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="banner-logo" alt="Landing Page"/>
+                        </a>
+                        <!--End of Banner Logo-->
+
+                        <!--The Logo that is shown on the sticky Navigation Bar-->
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="navigation-logo" alt="Landing Page"/>
+                        </a>
+                        <!--End of Navigation Logo-->
+
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Github" href="https://github.com/versusai">
+                                    <i class="fa fa-github fa-1x"></i><span>Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCmswW8XQuyQ8WMqqnietwnw">
+                                    <i class="fa fa-youtube-play fa-1x"></i><span>Youtube</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li>
+                                <a href="#abstract">Abstract</a>
+                            </li>
+                            <li>
+                                <a href="#media">Media</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <div class="row clearfix">
+            <!--Content of the Right Side-->
+            <div class="col-38 testimonial classic">
+                <img src="{{url_for('static', filename='images/user-images/victor.jpeg')}}" alt="User"/>
+
+                <div class="section-heading">
+                    <h3>ICRA 2021</h3>
+                    <h2 class="section-title">
+                        IEEE International Conference on Robotics and Automation (ICRA)
+                    </h2>
+                    <p class="section-subtitle"></p>
+                </div>
+
+                <p>
+                    <h3>Deep Reinforcement Learning for Mapless Navigation of a Hybrid Aerial Underwater Vehicle with Medium Transition</h3>
+                    
+                    <h4>Authors</h4>
+                    Ricardo Bedin Grando, Junior Costa de Jesus, Victor Augusto Kich, Alisson Henrique Kolling, Nicolas Pieper Bortoluzzi, Pedro Miranda Pinheiro, Armando Alves Neto, Paulo Lilles Jorge Drews-Jr.
+
+                    <br clear="all" />
+
+                </p>
+
+                <div class="section-heading"></div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Content Section-->
+        <div id="abstract" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>PROJECT</h3>
+                        <h2 class="section-title">
+                            Abstract</h2>
+                        <p class="section-subtitle"></p>
+                        <p>
+                            Since the application of Deep Q-Learning to the continuous action domain in Atari-like games, Deep Reinforcement Learning (Deep-RL) techniques for motion control have been qualitatively enhanced. Nowadays, modern Deep-RL can be successfully applied to solve a wide range of complex decision-making tasks for many types of vehicles. Based on this context, in this paper, we propose the use of Deep-RL to perform autonomous mapless navigation for Hybrid Unmanned Aerial Underwater Vehicles (HUAUVs), robots that can operate in both, air or water media. We developed two approaches, one deterministic and the other stochastic. Our system uses the relative localization of the vehicle and simple sparse range data to train the network. We compared our approaches with a traditional geometric tracking controller for mapless navigation. Based on experimental results, we can conclude that Deep-RL-based approaches can be successfully used to perform mapless navigation and obstacle avoidance for HUAUVs. Our vehicle accomplished the navigation in two scenarios, being capable to achieve the desired target through both environments, and even outperforming the geometric-based tracking controller on the obstacle-avoidance capability.
+                        </p>
+                    </div>
+                    
+                    <a href="https://arxiv.org/abs/2103.12883" class="button link-lightbox">
+                        FULL PAPER <i class="fa fa-book" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="media" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>MEDIA</h3>
+                        <h2 class="section-title">
+                            Video</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                    
+                    <p align="center">
+                        <iframe width="480" height="320" src="https://www.youtube.com/embed/HPkVm-ZYZ9I" frameborder="0" allowfullscreen></iframe>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--End Main Content Area-->
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+
+            <p id="copyright" class="col-2">VersusAI Research Group</p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Github" href="https://github.com/versusai">
+                        <i class="fa fa-github fa-1x"></i><span>Github</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Youtube" href="https://www.youtube.com/channel/UCmswW8XQuyQ8WMqqnietwnw">
+                        <i class="fa fa-youtube-play fa-1x"></i><span>Youtube</span>
+                    </a>
+                </li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="{{url_for('static', filename='js/jquery.1.8.3.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/featherlight.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/featherlight.gallery.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.enllax.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.scrollUp.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.easing.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.stickyNavbar.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/jquery.waypoints.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/images-loaded.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/lightbox.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/site.js')}}"></script>
+
+
+</body>
+</html>
