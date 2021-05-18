@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" title="Favicon"/>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/logo-images/Símbolo/VersusAI . Símbolo . L4 (Color).png')}}" title="Favicon"/>
 
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
@@ -60,12 +60,14 @@
 
                         <!--Logo that is shown on the banner-->
                         <a href="home">
-                            <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="banner-logo" alt="Landing Page"/>
                         </a>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="navigation-logo" alt="Landing Page"/>
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="navigation-logo" alt="Landing Page"/>
+                        </a>
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -94,7 +96,16 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#services">Marcelo Back de Araujo</a>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#awards">Awards</a>
+                            </li>
+                            <li>
+                                <a href="#miscellaneous">Miscellaneous</a>
+                            </li>
+                            <li>
+                                <a href="#extra">Extra</a>
                             </li>
                         </ul>
                     </nav>
@@ -107,51 +118,129 @@
             </div>
         </div><!--End of Header-->
 
+        <div class="row clearfix">
+            <!--Content of the Right Side-->
+            <div class="col-38 testimonial classic">
+                <img src="{{url_for('static', filename='images/user-images/marcelo.jpeg')}}" alt="User"/>
+
+                <div class="section-heading">
+                    <h3 class="section-title">Marcelo Back de Araujo</h3>
+                    <h4>
+                        Student of Ph.D. in Electrical Engieneering at Federal 
+                        University of Santa Maria, Master in Electrical 
+                        Engieneering at Federal University of Santa Maria and 
+                        Electrical Engieneering at Federal University of Santa Maria.</h4>
+                </div>
+
+                <p class="section-subtitle">Summary</p>
+                <p>
+                    ...
+                </p>
+
+                <div class="section-heading"></div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
         <!--Content Section-->
-        <div id="services" class="scrollto clearfix">
+        <div id="projects" class="scrollto clearfix">
             <div class="row no-padding-bottom clearfix">
                 <!--Content of the Right Side-->
                 <div class="col-2 testimonial classic">
-                    <img src="{{url_for('static', filename='images/user-images/marcelo.jpeg')}}" alt="User"/>
-
                     <div class="section-heading">
-                        <h3>Marcelo Back de Araujo</h3>
-                        <h2 class="section-title">
-                            Student of Ph.D. in Electrical Engieneering at Federal 
-                            University of Santa Maria, Master in Electrical 
-                            Engieneering at Federal University of Santa Maria and 
-                            Electrical Engieneering at Federal University of Santa Maria.</h2>
+                        <h3>PROJECTS</h3>
+                        <h2 class="section-title">Published Projects</h2>
                         <p class="section-subtitle"></p>
                     </div>
                     <p>
-                        <h4>Summary</h4>
+                        <h5>2021</h5>
+                        
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+                        <br clear="all" />
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
 
-                        ...
+                        <h5>2020</h5>
 
-                        <h4> Projects </h4>
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
 
-                        ...
-
-                        <h4> Awards </h4>
-
-                        ...
-
-                        <h4> Miscellaneous </h4>
-
-                        ...
-
-                        <h4> Extra </h4>
-
-                        ...
-
-                        <h6>Philosophy: "Education is not something you can finish”. Asimov, Isaac.</h6>
                     </p>
-
                 </div>
                 <!--End Content Right Side-->
 
+                <div class="col-2">
+                    <img src="{{url_for('static', filename='images/robot.jpg')}}" alt="Robot"/>
+                </div>
             </div>
+        </div>
 
+        <!--Content Section-->
+        <div id="awards" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>AWARDS</h3>
+                        <h2 class="section-title">Competition Awards</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                    <p>
+                        <h5>2020</h5>
+
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+                        
+                        <h5>2019</h5>
+                        
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+                        <br clear="all" />
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Content Section-->
+        <div id="awards" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>MISCELLANEOUS</h3>
+                        <h2 class="section-title">Diversified Experiences</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                    <p>
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+                        <br clear="all" />
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Content Section-->
+        <div id="awards" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>EXTRA</h3>
+                        <h2 class="section-title">Hobbies and Interests</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                    <p>
+                        <i class="fa fa-bookmark" aria-hidden="true"></i> ...
+                        <br clear="all" />
+                        <h6>Philosophy: "Education is not something you can finish”. Asimov, Isaac.</h6>
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
     <!--End Main Content Area-->
 
