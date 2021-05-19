@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" title="Favicon"/>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/logo-images/Símbolo/VersusAI . Símbolo . L4 (Color).png')}}" title="Favicon"/>
 
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
@@ -60,12 +60,14 @@
 
                         <!--Logo that is shown on the banner-->
                         <a href="home">
-                            <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="banner-logo" alt="Landing Page"/>
                         </a>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="navigation-logo" alt="Landing Page"/>
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="navigation-logo" alt="Landing Page"/>
+                        </a>
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -94,10 +96,10 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#abstract">Abstract</a>
                             </li>
                             <li>
-                                <a href="#services">Media</a>
+                                <a href="#media">Media</a>
                             </li>
                         </ul>
                     </nav>
@@ -110,59 +112,68 @@
             </div>
         </div><!--End of Header-->
 
-        <!--Introduction-->
-        <section id="about" class="introduction scrollto">
+        <div class="row clearfix">
+            <!--Content of the Right Side-->
+            <div class="col-38 testimonial classic">
+                <div class="section-heading">
+                    <h3>ICAR 2019</h3>
+                    <h2 class="section-title">
+                        IEEE International Conference on Advanced Robotics (ICAR)
+                    </h2>
+                </div>
+                <h3>Deep Deterministic Policy Gradient for Navigation of Mobile Robots in Simulated Environments</h3>
+                <h4>Authors</h4>
+                Junior Costa de Jesus, Jair Augusto Bottega, Marco A. S. L. Cuadros, Daniel Fernando Tello Gamarra.
+                <div class="section-heading"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Content Section-->
+        <div id="abstract" class="scrollto clearfix">
             <div class="row no-padding-bottom clearfix">
                 <!--Content of the Right Side-->
                 <div class="col-2 testimonial classic">
                     <div class="section-heading">
-                        <h3>ICAR 2019</h3>
+                        <h3>PROJECT</h3>
                         <h2 class="section-title">
-                            IEEE International Conference on Advanced Robotics (ICAR)</h2>
+                            Abstract</h2>
                         <p class="section-subtitle"></p>
+                        <p>
+                            This paper presents a study of a deep reinforcement learning 
+                            technique that uses a Deep Deterministic Policy Gradient network 
+                            for application in navigation of mobile robots. In order for the 
+                            robot to arrive to a target on a map, the network has 10 laser 
+                            range findings, the previous linear and angular velocity, and 
+                            relative position and angle of the mobile robot to the target 
+                            as inputs. As outputs, the network has the linear and angular velocity. 
+                            From the results analysis, it is possible to conclude that the deep 
+                            reinforcement learning's algorithms, with continuous actions, are 
+                            effective for decision-make of a robotic vehicle. However, it is 
+                            necessary to create a good reward system for the intelligent agent 
+                            to accomplish your objectives. This research uses different virtual 
+                            simulation environments provided by ROBOTIS in the robot simulation 
+                            software Gazebo in order to test the performance of the algorithm. 
+                            A supplementary video can be accessed at the following link: 
+                            https://youtu.be/NhGxEC3g7sU. That shows the performance of the 
+                            proposed system.
+                        </p>
                     </div>
-                    <p>
-                        <h3>Deep Deterministic Policy Gradient for Navigation of Mobile Robots in Simulated Environments</h3>
-                        <h4>Abstract</h4>
-                        This paper presents a study of a deep reinforcement learning 
-                        technique that uses a Deep Deterministic Policy Gradient network 
-                        for application in navigation of mobile robots. In order for the 
-                        robot to arrive to a target on a map, the network has 10 laser 
-                        range findings, the previous linear and angular velocity, and 
-                        relative position and angle of the mobile robot to the target 
-                        as inputs. As outputs, the network has the linear and angular velocity. 
-                        From the results analysis, it is possible to conclude that the deep 
-                        reinforcement learning's algorithms, with continuous actions, are 
-                        effective for decision-make of a robotic vehicle. However, it is 
-                        necessary to create a good reward system for the intelligent agent 
-                        to accomplish your objectives. This research uses different virtual 
-                        simulation environments provided by ROBOTIS in the robot simulation 
-                        software Gazebo in order to test the performance of the algorithm. 
-                        A supplementary video can be accessed at the following link: 
-                        https://youtu.be/NhGxEC3g7sU. That shows the performance of the 
-                        proposed system.
-
-                        <h4>Authors</h4>
-                        Junior Costa de Jesus, Jair Augusto Bottega, Marco A. S. L. Cuadros, Daniel Fernando Tello Gamarra.
-
-                        <br clear="all" />
-
-                        <a href="https://ieeexplore.ieee.org/abstract/document/8981638" class="button link-lightbox">
-                            FULL PAPER <i class="fa fa-book" aria-hidden="true"></i>
-                        </a>
-                    </p>
+                    
+                    <a href="https://ieeexplore.ieee.org/abstract/document/8981638" class="button link-lightbox">
+                        FULL PAPER <i class="fa fa-book" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <!--End Content Right Side-->
             </div>
-        </section>
-        <!--End of Introduction-->
+        </div>
 
-        <!--Content Section-->
-        <div id="services" class="scrollto clearfix">
+        <div id="media" class="scrollto clearfix">
             <div class="row no-padding-bottom clearfix">
                 <!--Content of the Right Side-->
                 <div class="col-2 testimonial classic">
-
                     <div class="section-heading">
                         <h3>MEDIA</h3>
                         <h2 class="section-title">
@@ -174,10 +185,8 @@
                         <iframe width="480" height="320" src="https://www.youtube.com/embed/ALekstflrAE" frameborder="0" allowfullscreen></iframe>
                     </p>
                 </div>
-                <!--End Content Right Side-->
-
             </div>
-
+        </div>
     </main>
     <!--End Main Content Area-->
 

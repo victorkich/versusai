@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.ico')}}" title="Favicon"/>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/logo-images/Símbolo/VersusAI . Símbolo . L4 (Color).png')}}" title="Favicon"/>
 
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
@@ -60,12 +60,14 @@
 
                         <!--Logo that is shown on the banner-->
                         <a href="home">
-                            <img src="{{url_for('static', filename='images/logo-1.png')}}" id="banner-logo" alt="Landing Page"/>
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="banner-logo" alt="Landing Page"/>
                         </a>
                         <!--End of Banner Logo-->
 
                         <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="{{url_for('static', filename='images/logo-1.png')}}" id="navigation-logo" alt="Landing Page"/>
+                        <a href="home">
+                            <img src="{{url_for('static', filename='images/logo-images/Logo B/VersusAI . Logo B . L1 (Color Black).png')}}" id="navigation-logo" alt="Landing Page"/>
+                        </a>
                         <!--End of Navigation Logo-->
 
                     </div>
@@ -94,10 +96,10 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#about">About</a>
+                                <a href="#abstract">Abstract</a>
                             </li>
                             <li>
-                                <a href="#services">Media</a>
+                                <a href="#media">Media</a>
                             </li>
                         </ul>
                     </nav>
@@ -110,69 +112,75 @@
             </div>
         </div><!--End of Header-->
 
-        <!--Introduction-->
-        <section id="about" class="introduction scrollto">
+        <div class="row clearfix">
+            <!--Content of the Right Side-->
+            <div class="col-38 testimonial classic">
+                <div class="section-heading">
+                    <h3>JINT 2021</h3>
+                    <h2 class="section-title">
+                        Journal of Intelligent & Robotic Systems
+                    </h2>
+                </div>
+                <h3>Soft Actor-Critic for Navigation of Mobile Robots</h3>
+                <h4>Authors</h4>
+                Junior Costa de Jesus, Victor Augusto Kich, Alisson Henrique Kolling, Ricardo Bedin Grando, Marco Antonio de Souza Leite Cuadros & Daniel Fernando Tello Gamarra.
+                <div class="section-heading"></div>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Content Section-->
+        <div id="abstract" class="scrollto clearfix">
             <div class="row no-padding-bottom clearfix">
                 <!--Content of the Right Side-->
                 <div class="col-2 testimonial classic">
                     <div class="section-heading">
-                        <h3>JINT 2020</h3>
+                        <h3>PROJECT</h3>
                         <h2 class="section-title">
-                            Journal of Intelligent & Robotic Systems</h2>
+                            Abstract</h2>
+                        <p class="section-subtitle"></p>
+                        <p>
+                            This paper provides a study of two deep reinforcement learning techniques for application in navigation
+                            of mobile robots, one of the techniques is the Soft Actor Critic (SAC) that is compared with the Deep 
+                            Deterministic Policy Gradients (DDPG) algorithm in the same situation. In order to make a robot to 
+                            arrive at a target in an environment, both networks have 10 laser range findings, the previous linear and 
+                            angular velocity, and relative position and angle of the mobile robot to the target are used as the 
+                            network inputs. As outputs, the networks have the linear and angular velocity of the mobile robot. The 
+                            reward function created was designed in a way to only give a positive reward to the agent when it gets 
+                            to the target and a negative reward when colliding with any object. The proposed architecture was 
+                            applied successfully in two simulated environments, and a comparison between the two referred 
+                            techniques was made using the results obtained as a basis and it was demonstrated that the SAC 
+                            algorithm has a superior performance for the navigation of mobile robots than the DDPG algorithm 
+                            (Code available at https://github.com/dranaju/project).                        </p>
+                    </div>
+                    
+                    <a href="https://link.springer.com/article/10.1007/s10846-021-01367-5" class="button link-lightbox">
+                        FULL PAPER <i class="fa fa-book" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="media" class="scrollto clearfix">
+            <div class="row no-padding-bottom clearfix">
+                <!--Content of the Right Side-->
+                <div class="col-2 testimonial classic">
+                    <div class="section-heading">
+                        <h3>MEDIA</h3>
+                        <h2 class="section-title">
+                            Video</h2>
                         <p class="section-subtitle"></p>
                     </div>
-                    <p>
-                        <h3>Soft Actor-Critic for Navigation of Mobile Robots</h3>
-                        <h4>Abstract</h4>
-                        This paper provides a study of two deep reinforcement learning techniques for application in navigation
-                        of mobile robots, one of the techniques is the Soft Actor Critic (SAC) that is compared with the Deep 
-                        Deterministic Policy Gradients (DDPG) algorithm in the same situation. In order to make a robot to 
-                        arrive at a target in an environment, both networks have 10 laser range findings, the previous linear and 
-                        angular velocity, and relative position and angle of the mobile robot to the target are used as the 
-                        network inputs. As outputs, the networks have the linear and angular velocity of the mobile robot. The 
-                        reward function created was designed in a way to only give a positive reward to the agent when it gets 
-                        to the target and a negative reward when colliding with any object. The proposed architecture was 
-                        applied successfully in two simulated environments, and a comparison between the two referred 
-                        techniques was made using the results obtained as a basis and it was demonstrated that the SAC 
-                        algorithm has a superior performance for the navigation of mobile robots than the DDPG algorithm 
-                        (Code available at https://github.com/dranaju/project).
-
-                        <h4>Authors</h4>
-                        Junior Costa de Jesus, Victor Augusto Kich, Alisson Henrique Kolling, Ricardo Bedin Grando, Marco Antonio de Souza Leite Cuadros & Daniel Fernando Tello Gamarra 
-
-                        <br clear="all" />
-
-                        <a href="https://link.springer.com/article/10.1007/s10846-021-01367-5" class="button link-lightbox">
-                            FULL PAPER <i class="fa fa-book" aria-hidden="true"></i>
-                        </a>
-                    </p>
-                </div>
-                <!--End Content Right Side-->
-            </div>
-        </section>
-        <!--End of Introduction-->
-
-        <!--Content Section-->
-        <div id="services" class="scrollto clearfix">
-            <!-- <div class="row no-padding-bottom clearfix"> -->
-                <!--Content of the Right Side-->
-                <!-- <div class="col-2 testimonial classic"> -->
-
-                    <!-- <div class="section-heading"> -->
-                        <!-- <h3>MEDIA</h3> -->
-                        <!-- <h2 class="section-title"> -->
-                            <!-- Video</h2> -->
-                        <!-- <p class="section-subtitle"></p> -->
-                    <!-- </div> -->
                     
-                    <!-- <p align="center"> -->
-                        <!-- <iframe width="480" height="320" src="https://www.youtube.com/embed/ALekstflrAE" frameborder="0" allowfullscreen></iframe> -->
-                    <!-- </p> -->
-                <!-- </div> -->
-                <!--End Content Right Side-->
-
-            <!-- </div> -->
-
+                    <!--p align="center">
+                        <iframe width="480" height="320" src="https://www.youtube.com/embed/HPkVm-ZYZ9I" frameborder="0" allowfullscreen></iframe>
+                    </p-->
+                </div>
+            </div>
+        </div>
     </main>
     <!--End Main Content Area-->
 

@@ -50,10 +50,10 @@ def icar2019():
 def icra2021():
     return render_template('icra2021.html')
 
-@app.route("/jifs2020")
-def jifs2020():
-    return render_template('jifs2020.html')
+@app.route("/jifs2021")
+def jifs2021():
+    return render_template('jifs2021.html')
 
-@app.route("/jint2020")
-def jint2020():
-    return render_template('jint2020.html')
+@app.route("/jint2021")
+def jint2021():
+    return render_template('jint2021.html')
