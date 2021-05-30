@@ -26,10 +26,6 @@ def ricardo():
 def eduardo():
     return render_template('eduardo.html')
 
-@app.route("/nicolas")
-def nicolas():
-    return render_template('nicolas.html')
-
 @app.route("/jair")
 def jair():
     return render_template('jair.html')
